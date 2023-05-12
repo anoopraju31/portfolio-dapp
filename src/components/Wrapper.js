@@ -1,8 +1,6 @@
-import { useCurrentWidth } from '../hooks'
 import { Navbar, PagePointer, Sidebar, Socialbar } from './'
 
 const Wrapper = ({ children }) => {
-	const currentWidth = useCurrentWidth()
 	return (
 		<div className=''>
 			<div className='w-screen md:w-[90vw] mx-auto relative' id='wrapper'>

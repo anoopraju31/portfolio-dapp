@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { Home } from './pages'
+import { AboutMe, Home } from './pages'
 import { Wrapper } from './components'
 
 const App = () => {
@@ -8,6 +8,7 @@ const App = () => {
 			<BrowserRouter>
 				<Routes>
 					<Route path='/' element={<Home />} />
+					<Route path='/about-me' element={<AboutMe />} />
 				</Routes>
 			</BrowserRouter>
 		</div>
