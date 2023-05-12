@@ -7,6 +7,13 @@
 :root {
   --wrapper-bg: #191C23;
   --green-color: #00FF57;
+
+  --navbar-bg: #00ff57;
+  --navbar-bg-hover: #00ff57;
+  --navbar-text: #fff;
+  --navbar-text-hover: #191C23;
+  --navbar-text-bg: #191C23;
+  --navbar-text-bg-hover: #fff;
   
   --container-height: calc(100vh - 96px);
 }
