@@ -15,7 +15,7 @@ const Wrapper = () => {
 					<div className='hidden md:col-span-1 md:flex bg-gray-600'></div>
 					<div className='col-span-12 md:col-span-8 bg-white'></div>
 					<div className='hidden md:col-span-1 md:flex bg-gray-600'></div>
-					<div className='hidden md:col-span-1 md:flex bg-slate-600'>
+					<div className='hidden md:col-span-1 md:flex justify-end items-center'>
 						<div className=''>
 							<Socialbar />
 						</div>
