@@ -1,9 +1,15 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 
 const SideIcon = ({ title, link, Icon }) => {
+	const currentPage = useSelector((state) => state.currentPage)
+
 	return (
 		<a className='group relative' href={link}>
-			<div className='w-fit p-1 lg:p-2 rounded-md group-hover:bg-[var(--green-color)] text-white'>
+			<div
+				className={`w-fit p-1 lg:p-2 rounded-md group-hover:bg-[var(--green-color)] text-white ${
+					currentPage === title ? 'bg-[var(--green-color)]' : 'bg-transparent'
+				}`}>
 				<Icon size={24} />
 			</div>
 
