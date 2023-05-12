@@ -38,7 +38,7 @@ const Navbar = () => {
 				)}
 			</div>
 
-			<div className='absolute  right-[1rem]'>
+			<div className='absolute top-[88px] right-[1rem]'>
 				<NavMenu />
 			</div>
 		</div>
