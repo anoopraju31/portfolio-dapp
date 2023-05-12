@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --wrapper-bg: #191C23;
+  
+  --container-height: calc(100vh - 96px);
+}
