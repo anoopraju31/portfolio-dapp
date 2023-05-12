@@ -13,7 +13,7 @@ const Wrapper = ({ children }) => {
 						<Sidebar />
 					</div>
 					<div className='hidden xl:col-span-1 xl:flex'></div>
-					<div className='col-span-12 md:col-span-10 xl:col-span-8 bg-white'>
+					<div className='col-span-12 md:col-span-10 xl:col-span-8 '>
 						{children}
 					</div>
 					<div className='hidden xl:col-span-1 xl:flex'></div>
