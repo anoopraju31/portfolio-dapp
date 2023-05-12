@@ -14,6 +14,7 @@
   --navbar-text-hover: #191C23;
   --navbar-text-bg: #191C23;
   --navbar-text-bg-hover: #fff;
+  --navbar-hover-color: #afb6bb24;
   
   --container-height: calc(100vh - 96px);
 }
