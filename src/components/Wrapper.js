@@ -19,8 +19,9 @@ const Wrapper = () => {
 						<div className='absolute top-[102px]'>
 							<Socialbar />
 						</div>
-
-						<PagePointer />
+						<div className=' relative top-[-48px]'>
+							<PagePointer />
+						</div>
 					</div>
 				</div>
 			</div>
