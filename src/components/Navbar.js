@@ -3,6 +3,7 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import { VscChromeClose } from 'react-icons/vsc'
 import Button from './Button'
 import { useCurrentWidth } from '../hooks'
+import NavMenu from './NavMenu'
 
 const Navbar = () => {
 	const [toggleNavbar, setToggleNavbar] = useState(false)
@@ -14,7 +15,7 @@ const Navbar = () => {
 	}, [currentWidth])
 
 	return (
-		<div className='flex items-center justify-between my-6 px-4 md:px-0'>
+		<div className='flex items-center justify-between my-6 px-4 md:px-0 relative'>
 			<h2 className='text-[var(--green-color)] z-30 font-[400] text-[24px] md:text-[32px] lg:text-[36px] font-handwriting'>
 				Anoop Raju
 			</h2>
@@ -35,6 +36,10 @@ const Navbar = () => {
 						<GiHamburgerMenu size={iconSize} />
 					</div>
 				)}
+			</div>
+
+			<div className='absolute  right-[1rem]'>
+				<NavMenu />
 			</div>
 		</div>
 	)
