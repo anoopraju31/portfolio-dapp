@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { VscChromeClose } from 'react-icons/vsc'
+import { motion } from 'framer-motion'
 import Button from './Button'
 import { useCurrentWidth } from '../hooks'
 import NavMenu from './NavMenu'
@@ -39,9 +40,19 @@ const Navbar = () => {
 			</div>
 
 			{toggleNavbar && (
-				<div className='md:hidden absolute top-[88px] right-[1rem]'>
+				<motion.div
+					className='md:hidden absolute right-[1rem]'
+					initial={{
+						opacity: 0,
+						top: 98,
+					}}
+					animate={{
+						opacity: 1,
+						top: 58,
+					}}
+					transition={{ duration: 0.9, ease: 'backOut' }}>
 					<NavMenu />
-				</div>
+				</motion.div>
 			)}
 		</div>
 	)
