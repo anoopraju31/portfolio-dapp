@@ -12,11 +12,11 @@ const Wrapper = () => {
 					<div className='hidden md:col-span-1 md:flex items-center justify-center relative top-[-48px]'>
 						<Sidebar />
 					</div>
-					<div className='hidden md:col-span-1 md:flex bg-gray-600'></div>
-					<div className='col-span-12 md:col-span-8 bg-white'></div>
-					<div className='hidden md:col-span-1 md:flex bg-gray-600'></div>
+					<div className='hidden xl:col-span-1 xl:flex bg-gray-600'></div>
+					<div className='col-span-12 md:col-span-10 xl:col-span-8 bg-white'></div>
+					<div className='hidden xl:col-span-1 xl:flex bg-gray-600'></div>
 					<div className='hidden md:col-span-1 md:flex justify-end items-center'>
-						<div className=''>
+						<div className='absolute top-[102px]'>
 							<Socialbar />
 						</div>
 					</div>
