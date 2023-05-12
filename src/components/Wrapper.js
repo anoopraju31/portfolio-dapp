@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Sidebar, Socialbar } from './'
+import { Navbar, PagePointer, Sidebar, Socialbar } from './'
 
 const Wrapper = () => {
 	return (
@@ -19,6 +19,8 @@ const Wrapper = () => {
 						<div className='absolute top-[102px]'>
 							<Socialbar />
 						</div>
+
+						<PagePointer />
 					</div>
 				</div>
 			</div>
