@@ -19,7 +19,7 @@ const Home = () => {
 								products is my calling. Currently, focused on Web3 Space.
 							</p>
 							<div className='w-fit mb-6 mx-auto lg:mx-0'>
-								<Button title='Know More About Me' />
+								<Button title='Know More About Me' link='/about-me' />
 							</div>
 						</div>
 						<div className='mt-10 md:mt-0'>

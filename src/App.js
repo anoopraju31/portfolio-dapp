@@ -1,9 +1,15 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Home } from './pages'
+import { Wrapper } from './components'
 
 const App = () => {
 	return (
 		<div className='wrapper-bg'>
-			<Home />
+			<BrowserRouter>
+				<Routes>
+					<Route path='/' element={<Home />} />
+				</Routes>
+			</BrowserRouter>
 		</div>
 	)
 }
