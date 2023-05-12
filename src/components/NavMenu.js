@@ -3,16 +3,30 @@ import { AiOutlineHome, AiFillContacts } from 'react-icons/ai'
 import { HiCode } from 'react-icons/hi'
 import { TbTools } from 'react-icons/tb'
 import { BsLinkedin, BsGithub, BsMedium, BsTwitter } from 'react-icons/bs'
+import { useSelector } from 'react-redux'
 import { Button } from './'
 
-const NavLink = ({ title, Icon }) => (
-	<a className='group flex gap-2 items-center justify-end' href='/'>
-		<h1 className='group-hover:text-[var(--green-color)]'> {title} </h1>
-		<div className='p-2 group-hover:bg-[var(--green-color)] rounded-md'>
-			<Icon size={24} />
-		</div>
-	</a>
-)
+const NavLink = ({ title, Icon }) => {
+	const currentPage = useSelector((state) => state.currentPage)
+
+	return (
+		<a className='group flex gap-2 items-center justify-end' href='/'>
+			<h1
+				className={`group-hover:text-[var(--green-color)] ${
+					currentPage === title ? 'text-[var(--green-color)]' : ''
+				}`}>
+				{' '}
+				{title}{' '}
+			</h1>
+			<div
+				className={`p-2 group-hover:bg-[var(--green-color)] rounded-md ${
+					currentPage === title ? 'bg-[var(--green-color)]' : ''
+				}`}>
+				<Icon size={24} />
+			</div>
+		</a>
+	)
+}
 
 const SocialLink = ({ link, Icon }) => (
 	<a className='hover:text-[var(--green-color)]' href={link}>
