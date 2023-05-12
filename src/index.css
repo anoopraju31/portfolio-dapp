@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
   --wrapper-bg: #191C23;
+  --green-color: #00FF57;
   
   --container-height: calc(100vh - 96px);
 }
