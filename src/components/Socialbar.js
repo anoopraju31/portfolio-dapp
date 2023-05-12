@@ -11,7 +11,7 @@ const SocialIcon = ({ link, Icon }) => (
 
 const Socialbar = () => {
 	return (
-		<div className='flex flex-col'>
+		<div className=''>
 			<SocialIcon link='https://www.linkedin.com' Icon={BsLinkedin} />
 			<SocialIcon link='https://www.github.com' Icon={BsGithub} />
 			<SocialIcon link='https://www.twitter.com' Icon={BsTwitter} />

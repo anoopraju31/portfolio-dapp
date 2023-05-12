@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 
 const Pointer = ({ title }) => {
 	const currentPage = useSelector((state) => state.currentPage)
-	console.log(currentPage === title)
+
 	return (
 		<div
 			className={`w-[8px] h-[8px] rounded-full ${

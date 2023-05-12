@@ -13,7 +13,7 @@ const SideIcon = ({ title, link, Icon }) => {
 				<Icon size={24} />
 			</div>
 
-			<div className='hidden absolute top-[4px] py-1 px-2  bg-[var(--green-color)] left-16 w-[110px] text-white  group-hover:block z-20 before:inline-block  before:content-[""] before:border-t-[8px] before:border-t-transparent before:border-b-[8px] before:border-b-transparent before:border-r-[8px] before:border-r-[var(--green-color)] before:relative before:top-[1px] before:left-[-15px]'>
+			<div className='hidden absolute top-[4px] py-1 px-2  bg-[var(--green-color)] left-16 w-[110px] text-white rounded-br-[6px] rounded-tr-[6px] group-hover:block z-20 before:inline-block  before:content-[""] before:border-t-[8px] before:border-t-transparent before:border-b-[8px] before:border-b-transparent before:border-r-[8px] before:border-r-[var(--green-color)] before:relative before:top-[1px] before:left-[-15px]'>
 				<span>{title}</span>
 			</div>
 		</a>

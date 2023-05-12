@@ -11,17 +11,19 @@ const Navbar = () => {
 	const [iconSize, setIconSize] = useState(26)
 	const currentWidth = useCurrentWidth()
 
+	console.log(currentWidth)
+
 	useEffect(() => {
 		setIconSize(currentWidth > 1920 ? 26 : currentWidth > 768 ? 24 : 22)
 	}, [currentWidth])
 
 	return (
-		<div className='flex items-center justify-between my-6 px-4 md:px-0 relative'>
+		<div className='w-screen md:w-[90vw] z-50 flex items-center justify-between py-6 px-4 md:px-0 relative'>
 			<h2 className='text-[var(--green-color)] z-30 font-[400] text-[24px] md:text-[32px] lg:text-[36px] font-handwriting'>
 				Anoop Raju
 			</h2>
 
-			<div className='hidden md:block'>
+			<div className='hidden md:block md:mr-2'>
 				<Button title='Connect to Wallet' isFilled={false} />
 			</div>
 

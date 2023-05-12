@@ -11,9 +11,14 @@ module.exports = {
 				navbarTextBg: 'var(--navbar-text-bg)',
 				navbarTextBgHover: 'var(--navbar-text-bg-hover)',
 			},
+			right: {
+				socialbarPositionSM: 'var(--socialbar-position-sm)',
+				socialbar: 'var(socialbar-position)',
+			},
 		},
 		fontFamily: {
 			handwriting: ['Mr De Haviland', 'cursive'],
+			openSans: ['Open Sans', 'sans-serif'],
 		},
 	},
 	plugins: [],
