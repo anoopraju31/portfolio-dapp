@@ -22,7 +22,7 @@ const SocialLink = ({ link, Icon }) => (
 
 const NavMenu = () => {
 	return (
-		<div className='md:hidden flex flex-col text-white p-4 gap-2 rounded-xl bg-[var(--navMenu-color)] shadow-[var(--navMenu-shadow)] backdrop-blur-[30px]'>
+		<div className='flex flex-col text-white p-4 gap-2 rounded-xl bg-[var(--navMenu-color)] shadow-[var(--navMenu-shadow)] backdrop-blur-[30px]'>
 			<NavLink title='Home' Icon={AiOutlineHome} />
 			<NavLink title='About Me' Icon={TbTools} />
 			<NavLink title='My Works' Icon={HiCode} />

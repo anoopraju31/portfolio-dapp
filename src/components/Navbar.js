@@ -38,9 +38,11 @@ const Navbar = () => {
 				)}
 			</div>
 
-			<div className='absolute top-[88px] right-[1rem]'>
-				<NavMenu />
-			</div>
+			{toggleNavbar && (
+				<div className='md:hidden absolute top-[88px] right-[1rem]'>
+					<NavMenu />
+				</div>
+			)}
 		</div>
 	)
 }
