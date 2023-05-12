@@ -10,7 +10,7 @@ const Wrapper = () => {
 					<Navbar />
 				</div>
 				<div className='grid grid-cols-12 h-[var(--container-height)]'>
-					<div className='hidden md:col-span-1 md:flex bg-slate-600 items-center justify-center'>
+					<div className='hidden md:col-span-1 md:flex items-center justify-center'>
 						<Sidebar />
 					</div>
 					<div className='hidden md:col-span-1 md:flex bg-gray-600'></div>
